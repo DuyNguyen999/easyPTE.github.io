@@ -1,0 +1,468 @@
+/* ----------------------------------------- */
+/* ----------------DEFAULT SETUP------------------------- */
+/* ----------------------------------------- */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Lato',sans-serif;
+    font-size: 20px;
+    color: #5a5a5a;
+    background-color: #ffffff;
+    text-rendering: optimizeLegibility;
+
+    /*default 16*/
+}
+
+body{
+    overflow-x: hidden;
+}
+
+/* ----------------------------------------- */
+/* ----------------REUSABLE------------------------- */
+/* ----------------------------------------- */
+
+.btn{
+    text-decoration: none;
+    color: white;
+    background-color: #e67e22;
+    padding: 15px 30px;
+    border-radius:  15px;
+    margin: 20px;
+    width: 200px;
+    display: inline-block;
+    text-align: center;
+    transition: all .3s;
+}
+
+.btn:hover,  /*psuedo class*/
+.btn:active{
+    background-color: #d35400;
+}
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;    
+}
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+h1,h2,h3{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+h1{
+    font-size: 300%;
+    font-weight: 500;
+    color: white;
+    line-height: 200%;
+    margin-bottom: 50px;
+}
+h2{
+   
+    color: #e67e22;
+    font-size: 180%;
+    font-weight: 700;
+    text-align: center;
+}
+
+h2:after{
+    content: "";
+    display: block;
+    width: 150px;
+    height: 3px;
+    background-color: rgba(203,126,34,0.5);
+    margin: 0 auto;
+    margin-top: 5px;
+    width: 70%;
+    margin-left: 15%;
+    line-height: 140%;
+    /*Creating the line after h2*/
+}
+
+h3{
+    padding-top: 30px;
+    padding-bottom: 10px;
+    text-align: center;
+    background-color: #265077;
+    color: white;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.p-long{
+    text-align: center;
+    columns: #265077;;
+    font-size: 22px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+section{
+    padding: 50px;
+}
+/* ----------------------------------------- */
+/* ----------------HEADER------------------------- */
+/* ----------------------------------------- */
+
+header{
+    background-image: linear-gradient(45deg,rgba(2,33,64,0.8)60%,rgb(45,95,93,.85)),url("../img/headerbg.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    /* view height */
+
+    background-attachment: fixed;
+    /* stroll down */
+
+}
+
+.logo{
+    width: 250px;
+    float: left;
+    margin-left: 70px;
+    margin-top: -00px;
+}
+
+.main-nav{
+    float: right;
+    list-style: none;
+    margin-right: 50px;
+    margin-top: 50px;
+}
+
+.main-nav li{
+    display: inline-block;
+    margin-right: 100px;
+}
+
+.main-nav li a{
+    text-decoration: none;
+    color: white;
+    font-size: 110%;
+    font-weight: 700;
+    transition: border-bottom 0.5s;
+    padding: 5px 0;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom: 1px solid white; 
+    /* underline */
+}
+
+
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.heading-main-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-60%,-30%);
+    /* to center */
+    width: 1140px;
+}
+
+/***************sticky******************/
+
+.sticky{
+    background-color: rgba(2,33,64,0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 900;
+    width: 100%;
+    height: 100px;
+    padding-bottom: 10px;
+}
+
+.sticky .logo{
+    width: 250px;
+    margin-top: 10px;
+    /* margin-bottom: -70px; */
+}
+
+.sticky .main-nav{
+    margin-top: 30px;
+}
+
+/**************mobile nav icob*************/
+
+ .mobile-nav-icon{
+    font-size: 200%;
+    color: silver;
+    position: absolute;
+    top: 55px;
+    right:  100px;
+    display: none;
+}
+
+.sticky .mobile-nav-icon{
+    top: 30px;
+}
+ 
+
+
+/* ----------------------------------------- */
+/* ----------------ABOUT------------------------- */
+/* ----------------------------------------- */
+.about-picture{
+    position: relative;
+    margin-top: 50px;
+}
+.about-picture img{
+    width: 90%;
+    border-radius: 15px;
+    border:4px solid #85bcf0;
+    box-shadow:5px 5px 10px 5px #265077 ;
+    transition: all .5s;
+    /*x-y-clarity-zoom-color */
+    /* filter: blur(2px) brightness(50%); */
+}
+
+.adta-logo{
+    border-radius: 15%;
+    width: 20%;
+    margin-left: 40%;
+}
+
+.picture-title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #c2e1fd;
+    transform: translate(-65%, 100%);
+    opacity: 0;
+    transition: all .5s;
+}
+
+.about-picture:hover img,
+.about-picture:active img{
+    filter: blur(2px) brightness(50%);
+}
+
+.about-picture:hover .picture-title,
+.about-picture:active .picture-title{
+    transform: translate(-50%,-50%);
+    opacity: 1;
+}
+
+/* ----------------------------------------- */
+/* ----------------PRICING------------------------- */
+/* ----------------------------------------- */
+
+.pricing{
+    background-color: #f4f4f4;
+}
+
+.pricing h2{
+    margin-bottom: 60px;
+}
+
+.pricing-box{
+    background-color:#eeefff;
+    box-shadow: 5px 5px 5px 5px #e0e0e0;
+    width: 90%;
+    height: 300px;
+    text-align: center;
+}
+
+.tuition-fee{
+    color: #265077;
+    font-size: 250%;
+    font-weight: 250;
+    margin-top: 75px;
+}
+
+.tuition-fee span{
+    font-size: 90%;
+    font-weight: 100;    
+}
+.note{
+    position: relative;
+    margin-top: 50px;
+    width: 70%;
+    margin-left: 15%;
+
+}
+
+.check-sign{
+    color: #5889b6;
+    margin-right: 20px;
+    font-size: 130%;
+}
+
+/* ----------------------------------------- */
+/* ----------------VISION------------------------- */
+/* ----------------------------------------- */
+
+.vision{
+    background-image:  linear-gradient(45deg,rgba(2,33,64,0.8)60%,rgb(45,95,93,.85)),url('../img/DSC05214.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    /*Keep the bacground at same position*/
+ 
+}
+
+.vision h2{
+    margin-bottom: 60px;
+}
+
+blockquote{
+    position: relative;
+    width: 70%;
+    margin-left: 15%;    
+    font-style: italic; 
+    line-height: 130%;
+    color: white;
+}
+
+blockquote:before{
+    content: "\201C";
+    /*glyphs css tricks**/
+    display: block;
+    font-size: 400%;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+}
+
+cite{
+    display: block;
+    color: #99bfe2;
+    font-style: normal;
+    margin-top: 25px;
+}
+
+/* ----------------------------------------- */
+/* ----------------FAQ------------------------- */
+/* ----------------------------------------- */
+
+.faq-section{
+    background-color: #f4f4f4;
+}
+
+.faq-section h2{
+    margin-bottom: 50px;
+}
+.faq-question {
+    margin-left: 10%;
+}
+
+.faq-question li{
+    list-style: none;
+    float: left;
+    width: 70%;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+/* ----------------------------------------- */
+/* ----------------CONTACT FORM------------------------- */
+/* ----------------------------------------- */
+
+.contact{
+    background-image:  linear-gradient(45deg,rgba(2,33,64,0.8)60%,rgb(45,95,93,.85)),url(../img/contactbg.jpg);
+    background-position: center;
+    background-size:cover;
+    background-attachment: fixed;
+}
+
+.information{
+    list-style: none;
+    color: white;
+    line-height: 200%;
+    margin-top: 60px;
+    word-spacing: 1px;
+}
+
+.small-icon{
+    color: #427db4;
+    margin-right: 15px;
+}
+
+.information .small-icon:hover,
+.information .small-icon:active{
+    transform: scale(1.5);
+}
+
+/***************************FORM*******************/
+
+form{
+    background-color: rgba(0,0,0,0.4);   
+    margin-left: 40%;
+    width: 70%;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+form .row{
+    margin-bottom: 20px;
+}
+
+label{
+    font-size: 150%;
+    color: white;
+}
+input,textarea{
+    outline: none;
+    padding: 10px;
+    background-color: rgba(47,48,43,0.3);
+    border: 1px solid rgba(47,48,43,0.3);
+    margin-left: 30px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+textarea{
+    resize: none;
+    height: 100px;
+}
+input{
+    height: 50px;
+
+}
+
+form .row:last-child{
+    text-align: center;
+}
+
+input[type=submit]{
+    font-weight: 700;
+    font-size: 100%;
+    border-radius: 5px;
+    width: 70%;
+}
+
+input[type=text],input[type=email] ,textarea{
+    width: 80%;
+    font-size: 100%;
+    transition: all .3s;
+    color: rgb(199, 193, 193);
+}
+
+input[type=text]:focus,input[type=email]:focus ,textarea:focus{
+    color: white;
+    background-color: rgba(47,48,43,0.7);
+}
+
+
+/* ----------------------------------------- */
+/* ----------------FOOTER------------------------- */
+/* ----------------------------------------- */
+
+footer{
+    text-align: center;
+    background-color: #5a5a5a;
+    color: white;
+    padding: 20px;
+}
+

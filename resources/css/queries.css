@@ -1,0 +1,168 @@
+@media only screen and (max-width:1200px){
+    html{
+        font-size: 16px;
+    }
+   
+    .heading-main-box{
+        transform: translate(-35%,-40%)
+    }
+    form{
+        margin-left: 30%;
+    }
+
+    .main-nav{
+        display: block;
+        margin-right: 15px;
+        margin-top: 40px;
+    }
+}
+/*big tablet to 1200px*/
+
+@media only screen and (max-width:1023px){
+   
+
+    .logo{
+        width: 200px;
+        margin-left: 30px;
+    }
+
+    .main-nav{
+        display: block;
+        margin-right: 15px;
+        margin-top: 40px;
+    }
+
+    .main-nav li{
+        margin-right: 60px;
+    
+    }
+
+    .heading-main-box{
+        transform: translate(-30%,-50%);
+        font-size: 14px;
+
+    }
+
+    .information i{
+        display: block;
+    }
+
+    .information li{
+        font-size: 12px;
+    }
+}
+/*small tablet to big tablet from 768px to 1023px*/
+
+@media only screen and (max-width:767px){
+    .col{
+        width: 100%;
+    }
+    .main-nav{
+        display: none;
+    }
+
+    .mobile-nav-icon{display: block;
+    }
+    
+    .logo{
+        margin-left: 30%;
+        margin-top: 10%;
+    }
+
+    h1{
+        word-spacing: 2px;
+        font-size: 200%;
+    }
+
+    .heading-main-box{
+        transform: translate(-20%,-50%)
+    }
+
+    .heading-main-box btn{
+        width: 10%;
+    }
+
+    .about-picture{
+        text-align: center;
+    }
+
+    .about .row .p-long{
+        font-size: 16px;
+    }
+
+    .picture-title{
+        font-size: 20px;
+    }
+
+    form{
+        width: 80%;
+        margin-left: 10%;
+    }
+    label{
+        margin-left: 35%;
+    }
+    .information{
+        margin-top: 30px;
+        text-align: center;
+    }
+    .information li{
+        font-size: 20px;
+    }
+}
+
+
+@media only screen and (max-width:570px){
+
+    .mobile-nav-icon{
+        right: 45px;
+    }
+}
+/**/
+
+/*small phone to small tablet*/
+
+
+
+@media only screen and (max-width:480px){
+
+    html{
+        font-size: 12px;
+    }
+    h1{
+        font-size: 150%;
+    }
+
+    .heading-main-box {
+        transform: translate(-15%,-50%);
+        }
+
+    .heading-main-box .btn{
+        display: block;
+        margin-bottom: 20px;
+        margin-left: 5%;
+    }
+    .logo{
+        margin-left: 30%;
+        margin-top: 25%;
+    }
+
+    .information li{
+        font-size: 12px;
+    }
+
+    form{
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    
+    .mobile-nav-icon{
+        top: 100px;
+    }
+
+     .sticky .logo{
+        width: 200px;
+        margin-top: 0px;
+    }
+}
+/*small phone from 0 to 480px*/
